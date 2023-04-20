@@ -1,5 +1,7 @@
 package edu.up.cs301threadslab;
 
+import java.lang.Thread;
+
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -79,6 +81,11 @@ public class AnimationView extends SurfaceView{
         super.draw(canvas);
         for(Animation anim : anims) {
             anim.draw(canvas);
+        }
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
         }
         postInvalidate();
     }//draw
