@@ -36,6 +36,9 @@ public class MainActivity extends Activity
         //Let me know when someone adjusts the seekbar
         theSeekBar = (SeekBar)findViewById(R.id.seekBar);
         theSeekBar.setOnSeekBarChangeListener(this);
+
+        ThreadedAnimationView myTAV = new ThreadedAnimationView(myAV);
+        myTAV.start();
     }//onClick
 
     @Override
