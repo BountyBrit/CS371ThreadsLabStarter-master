@@ -12,7 +12,7 @@ public class ThreadedAnimationView extends Thread {
         while(true) {
             myAV.postInvalidate();
             try {
-                Thread.sleep(3000);
+                Thread.sleep(50);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
