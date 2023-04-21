@@ -4,7 +4,7 @@ public class ThreadedStarAnimation extends Thread {
     StarAnimation mySA;
     public ThreadedStarAnimation(StarAnimation newSA){
         super();
-        mySA = newSA;
+        this.mySA = newSA;
     }
 //    @Override
     public void run(){
