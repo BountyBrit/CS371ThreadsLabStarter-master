@@ -39,6 +39,7 @@ public class MainActivity extends Activity
 
         ThreadedAnimationView myTAV = new ThreadedAnimationView(myAV);
         myTAV.start();
+
     }//onClick
 
     @Override
